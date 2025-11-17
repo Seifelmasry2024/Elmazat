@@ -1,0 +1,889 @@
+
+/* Cover Image */
+.page-main {
+    background: linear-gradient(135deg, #2c3e50b3 0%, #34495eb3 100%),
+    url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=400&fit=crop') center/cover;
+    color: white;
+    padding: 96px 32px;
+    text-align: center;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-main-content {
+    animation: slideInUp 0.6s ease;
+}
+
+.page-main h1 {
+    font-size: 40px;
+    margin-bottom: 8px;
+    font-weight: 900;
+}
+
+.page-main p {
+    font-size: 21px;
+    opacity: 0.9;
+}
+
+/* About Page Content */
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.about-text h2 {
+    font-size: 32px;
+    color: var(--dark-color);
+    margin-bottom: 24px;
+    position: relative;
+    padding-bottom: 16px;
+}
+
+.about-text h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80px;
+    height: 4px;
+    background: var(--accent-color);
+    border-radius: 2px;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 24px;
+    text-align: justify;
+}
+
+.about-image {
+    position: relative;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* Values */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 32px;
+}
+
+.value-card {
+    background: white;
+    padding: 32px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    animation: slideInUp 0.6s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px #e74c3c33;
+}
+
+.value-icon {
+    font-size: 40px;
+    color: var(--primary-color);
+    margin-bottom: 16px;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--accent-color) 0%, var(--primary-color) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.value-card:hover .value-icon {
+    animation: pulse 0.6s ease;
+    transform: rotate(10deg);
+}
+
+.value-card h3 {
+    font-size: 19px;
+    margin-bottom: 8px;
+    color: var(--dark-color);
+}
+
+.value-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Team */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 32px;
+}
+
+.team-member {
+    text-align: center;
+    background: white;
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    animation: slideInUp 0.6s ease;
+    overflow: hidden;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px #e74c3c33;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 16px;
+    border: 4px solid var(--accent-color);
+    transition: var(--transition);
+}
+
+.team-member:hover img {
+    transform: scale(1.05);
+    animation: glow 1s ease;
+}
+
+.team-member h3 {
+    font-size: 21px;
+    color: var(--dark-color);
+    margin-bottom: 8px;
+}
+
+.team-member .position {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.team-member .bio {
+    color: #666;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+/* Achievements */
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 32px;
+}
+
+.achievement {
+    background: #ffffff1a;
+    padding: 32px;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-color);
+    transition: var(--transition);
+    animation: slideInUp 0.6s ease;
+}
+
+.achievement:hover {
+    background: #ffffff33;
+    transform: translateX(10px);
+}
+
+.achievement h3 {
+    font-size: 19px;
+    margin-bottom: 8px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.achievement p {
+    opacity: 0.95;
+    line-height: 1.6;
+}
+
+/* Terms and Conditions */
+.terms-content {
+    background: white;
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    line-height: 1.8;
+}
+
+.terms-section {
+    margin-bottom: 32px;
+    animation: slideInUp 0.6s ease;
+}
+
+.terms-section h2 {
+    font-size: 24px;
+    color: var(--primary-color);
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.terms-section h3 {
+    font-size: 18px;
+    color: var(--dark-color);
+    margin: 16px 0 8px 0;
+}
+
+.terms-section p {
+    color: #555;
+    text-align: justify;
+}
+
+.terms-section ul {
+    margin: 16px 0 16px 32px;
+    color: #555;
+}
+
+.terms-section li {
+    margin-bottom: 8px;
+}
+
+/* المزادات */
+.auctions-container {
+    padding: 32px 0;
+}
+
+.filters {
+    background: white;
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    margin-bottom: 32px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-group label {
+    font-weight: 600;
+    color: var(--dark-color);
+    margin-bottom: 8px;
+}
+
+.filter-group input,
+.filter-group select {
+    padding: 11px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Cairo', sans-serif;
+    transition: var(--transition);
+}
+
+.filter-group input:focus,
+.filter-group select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px #e74c3c4d;
+}
+
+.auctions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.auction-item {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    animation: slideInUp 0.6s ease;
+}
+
+.auction-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.auction-image {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+}
+
+.auction-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.auction-item:hover .auction-image img {
+    transform: scale(1.1);
+    filter: brightness(0.9);
+}
+
+.auction-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: var(--primary-color);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.auction-info {
+    padding: 24px;
+}
+
+.auction-info h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: var(--dark-color);
+}
+
+.auction-price {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.current-price {
+    font-size: 21px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.original-price {
+    font-size: 14px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.auction-bids {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 16px;
+}
+
+/* Registration Forms */
+
+.form-container {
+    max-width: 550px;
+    margin: 48px auto;
+    background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 100%);
+    padding: 48px 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    animation: slideInUp 0.6s ease;
+    border: 1px solid #e74c3c1a;
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Cairo', sans-serif;
+    font-size: 16px;
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px #e74c3c4d;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-group input[type="checkbox"],
+.form-group input[type="radio"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+.checkbox-group,
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.form-buttons .btn {
+    flex: 1;
+}
+
+/* Responsive Design */
+
+@media (max-width: 1024px) {
+    .page-main {
+        padding: 80px 32px;
+        min-height: 250px;
+    }
+
+    .page-main h1 {
+        font-size: 2.32px;
+    }
+
+    .page-main p {
+        font-size: 18px;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .values-grid,
+    .team-grid,
+    .achievements-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .auctions-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .filters {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form-container {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-main {
+        padding: 64px 24px;
+        min-height: 220px;
+    }
+
+    .page-main h1 {
+        font-size: 1.7rem;
+        margin-bottom: 6px;
+    }
+
+    .page-main p {
+        font-size: 15px;
+    }
+
+    .page-main-content {
+        animation: slideInUp 0.6s ease;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .about-text h2 {
+        font-size: 1.64px;
+        margin-bottom: 16px;
+    }
+
+    .about-text p {
+        font-size: 14px;
+    }
+
+    .about-image img {
+        border-radius: 8px;
+    }
+
+    .values-grid,
+    .team-grid,
+    .achievements-grid {
+        grid-template-columns: 1fr;
+        gap: 19px;
+    }
+
+    .value-card,
+    .team-member,
+    .achievement {
+        padding: 24px;
+    }
+
+    .value-card h3,
+    .team-member h3 {
+        font-size: 18px;
+    }
+
+    .team-member img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .team-member .position {
+        font-size: 14px;
+    }
+
+    .team-member .bio {
+        font-size: 14px;
+    }
+
+    .auctions-grid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 16px;
+    }
+
+    .auction-image {
+        height: 180px;
+    }
+
+    .filters {
+        grid-template-columns: 1fr;
+        gap: 13px;
+        padding: 24px;
+    }
+
+    .filter-group label {
+        font-size: 14px;
+    }
+
+    .filter-group input,
+    .filter-group select {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .form-container {
+        max-width: 100%;
+        margin: 16px auto;
+        padding: 24px;
+    }
+
+    .form-header h2 {
+        font-size: 24px;
+    }
+
+    .form-group label {
+        font-size: 15px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 11px;
+        font-size: 14px;
+    }
+
+    .form-buttons {
+        gap: 13px;
+    }
+
+    .form-buttons .btn {
+        padding: 11px;
+        font-size: 14px;
+    }
+
+    .terms-content {
+        padding: 24px;
+    }
+
+    .terms-section {
+        margin-bottom: 24px;
+    }
+
+    .terms-section h2 {
+        font-size: 21px;
+        margin-bottom: 13px;
+    }
+
+    .terms-section h3 {
+        font-size: 16px;
+        margin: 13px 0 8px 0;
+    }
+
+    .terms-section p,
+    .terms-section li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-main {
+        padding: 40px 16px;
+        min-height: 180px;
+    }
+
+    .page-main h1 {
+        font-size: 1.64px;
+        margin-bottom: 5px;
+    }
+
+    .page-main p {
+        font-size: 14px;
+    }
+
+    .about-content {
+        gap: 16px;
+    }
+
+    .about-text h2 {
+        font-size: 19px;
+        margin-bottom: 11px;
+    }
+
+    .about-text p {
+        font-size: 13px;
+        margin-bottom: 13px;
+    }
+
+    .values-grid,
+    .team-grid,
+    .achievements-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .value-card,
+    .team-member,
+    .achievement {
+        padding: 16px;
+    }
+
+    .value-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
+
+    .value-card h3,
+    .team-member h3 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .value-card p,
+    .team-member .bio {
+        font-size: 13px;
+    }
+
+    .team-member img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 13px;
+    }
+
+    .team-member .position {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    .achievement h3 {
+        font-size: 15px;
+    }
+
+    .achievement p {
+        font-size: 13px;
+    }
+
+    .auctions-grid {
+        grid-template-columns: 1fr;
+        gap: 13px;
+    }
+
+    .auction-image {
+        height: 150px;
+    }
+
+    .auction-badge {
+        padding: 5px 11px;
+        font-size: 0.780px;
+    }
+
+    .auction-info {
+        padding: 11px;
+    }
+
+    .auction-info h3 {
+        font-size: 14px;
+        min-height: 30px;
+        margin-bottom: 5px;
+    }
+
+    .auction-price {
+        padding: 5px 0;
+        margin-bottom: 0.32px;
+    }
+
+    .current-price {
+        font-size: 15px;
+    }
+
+    .original-price {
+        font-size: 0.780px;
+    }
+
+    .auction-bids {
+        font-size: 0.780px;
+        margin-bottom: 8px;
+    }
+
+    .auction-item .btn {
+        padding: 6px;
+        font-size: 11px;
+    }
+
+    .filters {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 16px;
+    }
+
+    .filter-group {
+        margin-bottom: 8px;
+    }
+
+    .filter-group label {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .filter-group input,
+    .filter-group select {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .form-container {
+        margin: 13px auto;
+        padding: 16px;
+    }
+
+    .form-header h2 {
+        font-size: 21px;
+        margin-bottom: 8px;
+    }
+
+    .form-header p {
+        font-size: 14px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 13px;
+    }
+
+    .form-group {
+        margin-bottom: 16px;
+    }
+
+    .form-group label {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .form-group input[type="checkbox"],
+    .form-group input[type="radio"] {
+        width: auto;
+        margin-right: 6px;
+    }
+
+    .checkbox-label {
+        font-size: 14px;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-buttons .btn {
+        width: 100%;
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .form-link {
+        text-align: center;
+        font-size: 14px;
+        margin-top: 16px;
+    }
+
+    .form-link a {
+        font-size: 14px;
+    }
+
+    .terms-content {
+        padding: 16px;
+    }
+
+    .terms-section {
+        margin-bottom: 19px;
+    }
+
+    .terms-section h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .terms-section h3 {
+        font-size: 14px;
+        margin: 10px 0 6px 0;
+    }
+
+    .terms-section p {
+        font-size: 13px;
+        text-align: justify;
+    }
+
+    .terms-section ul {
+        margin: 10px 0 13px 24px;
+    }
+
+    .terms-section li {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+}
+

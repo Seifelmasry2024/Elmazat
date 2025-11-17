@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Background circle with gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B6B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF8E53;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFA500;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main background circle -->
+  <circle cx="32" cy="32" r="32" fill="url(#bgGradient)"/>
+  
+  <!-- Auction hammer (gavel) -->
+  <g transform="translate(32, 32)">
+    <!-- Hammer head - golden -->
+    <rect x="-12" y="-18" width="24" height="10" rx="2" fill="url(#goldGradient)" stroke="#E0A000" stroke-width="1"/>
+    
+    <!-- Hammer handle -->
+    <rect x="-2" y="-8" width="4" height="22" fill="#8B6F47" stroke="#654321" stroke-width="0.5"/>
+    
+    <!-- Gavel bottom part -->
+    <ellipse cx="0" cy="14" rx="8" ry="4" fill="#8B6F47" stroke="#654321" stroke-width="0.5"/>
+    
+    <!-- Shine effect on hammer head -->
+    <rect x="-10" y="-16" width="20" height="3" rx="1" fill="#FFFF99" opacity="0.6"/>
+    
+    <!-- Dollar sign overlay (auction symbol) -->
+    <text x="0" y="3" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle" font-family="Arial, sans-serif">$</text>
+  </g>
+  
+  <!-- Decorative stars at corners -->
+  <g fill="#FFFFFF" opacity="0.8">
+    <!-- Top-left star -->
+    <path d="M 8 6 L 9 9 L 12 9 L 10 11 L 11 14 L 8 12 L 5 14 L 6 11 L 4 9 L 7 9 Z"/>
+    <!-- Top-right star -->
+    <path d="M 56 6 L 57 9 L 60 9 L 58 11 L 59 14 L 56 12 L 53 14 L 54 11 L 52 9 L 55 9 Z"/>
+    <!-- Bottom-left star -->
+    <path d="M 8 58 L 9 61 L 12 61 L 10 63 L 11 66 L 8 64 L 5 66 L 6 63 L 4 61 L 7 61 Z"/>
+    <!-- Bottom-right star -->
+    <path d="M 56 58 L 57 61 L 60 61 L 58 63 L 59 66 L 56 64 L 53 66 L 54 63 L 52 61 L 55 61 Z"/>
+  </g>
+  
+  <!-- Outer ring -->
+  <circle cx="32" cy="32" r="32" fill="none" stroke="#FFF" stroke-width="2" opacity="0.3"/>
+</svg>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المزادات - منصة المزادات</title>
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <a href="../index.html" class="logo">
+                <i class="fas fa-gavel"></i> المزاد
+            </a>
+            <ul class="nav-menu">
+                <li><a href="../index.html">الرئيسية</a></li>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="auctions.html">المزادات</a></li>
+                <li><a href="terms.html">الشروط والأحكام</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="login.html" target="_blank" class="btn btn-secondary">دخول</a>
+                <a href="register.html" target="_blank" class="btn btn-primary">تسجيل جديد</a>
+            </div>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Cover Image -->
+    <section class="page-main">
+        <div class="page-main-content">
+            <h1>جميع المزادات</h1>
+            <p>اكتشف أفضل العروض والمنتجات</p>
+        </div>
+    </section>
+
+    <!-- Page Content -->
+    <section class="auctions-container section">
+        <div class="container">
+            <!-- Filters -->
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="search">
+                        <i class="fas fa-search"></i> البحث
+                    </label>
+                    <input type="text" id="search" placeholder="ابحث عن منتج...">
+                </div>
+                <div class="filter-group">
+                    <label for="category">الفئة</label>
+                    <select id="category">
+                        <option value="">جميع الفئات</option>
+                        <option value="electronics">الإلكترونيات</option>
+                        <option value="jewelry">المجوهرات</option>
+                        <option value="fashion">الملابس والأحذية</option>
+                        <option value="accessories">الإكسسوارات</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="priceMin">السعر من</label>
+                    <input type="number" id="priceMin" placeholder="0" min="0">
+                </div>
+                <div class="filter-group">
+                    <label for="priceMax">السعر إلى</label>
+                    <input type="number" id="priceMax" placeholder="10000" min="0">
+                </div>
+                <div class="filter-group">
+                    <label for="sort">ترتيب حسب</label>
+                    <select id="sort">
+                        <option value="">الأحدث أولاً</option>
+                        <option value="price-asc">السعر: من الأقل للأعلى</option>
+                        <option value="price-desc">السعر: من الأعلى للأقل</option>
+                        <option value="popular">الأكثر شهرة</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>&nbsp;</label>
+                    <button class="btn btn-primary" style="width: 100%;">
+                        <i class="fas fa-filter"></i> تطبيق الفلاتر
+                    </button>
+                </div>
+            </div>
+
+            <!-- Auctions Grid -->
+            <div class="auctions-grid">
+                <!-- Product 1 -->
+                <div class="auction-item">
+                    <div class="auction-image">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&h=300&fit=crop" alt="ساعة ذكية">
+                        <span class="auction-badge">ينتهي خلال 2 يوم</span>
+                    </div>
+                    <div class="auction-info">
+                        <h3>ساعة ذكية فاخرة</h3>
+                        <div class="auction-price">
+                            <span class="current-price">500 ريال</span>
+                            <span class="original-price">1200 ريال</span>
+                        </div>
+                        <div class="auction-bids">عدد العروض: 45</div>
+                        <button class="btn btn-primary">ضع عرضك</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="auction-item">
+                    <div class="auction-image">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300&h=300&fit=crop" alt="عقد ذهبي">
+                        <span class="auction-badge">ينتهي خلال 1 يوم</span>
+                    </div>
+                    <div class="auction-info">
+                        <h3>عقد ذهبي فاخر</h3>
+                        <div class="auction-price">
+                            <span class="current-price">800 ريال</span>
+                            <span class="original-price">1500 ريال</span>
+                        </div>
+                        <div class="auction-bids">عدد العروض: 62</div>
+                        <button class="btn btn-primary">ضع عرضك</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="auction-item">
+                    <div class="auction-image">
+                        <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=300&h=300&fit=crop" alt="نظارات شمسية">
+                        <span class="auction-badge">ينتهي خلال 3 أيام</span>
+                    </div>
+                    <div class="auction-info">
+                        <h3>نظارات شمسية بريطانية</h3>
+                        <div class="auction-price">
+                            <span class="current-price">300 ريال</span>
+                            <span class="original-price">700 ريال</span>
+                        </div>
+                        <div class="auction-bids">عدد العروض: 38</div>
+                        <button class="btn btn-primary">ضع عرضك</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="auction-item">
+                    <div class="auction-image">
+                        <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=300&h=300&fit=crop" alt="حقيبة جلد">
+                        <span class="auction-badge">ينتهي خلال 5 أيام</span>
+                    </div>
+                    <div class="auction-info">
+                        <h3>حقيبة جلد إيطالية</h3>
+                        <div class="auction-price">
+                            <span class="current-price">1200 ريال</span>
+                            <span class="original-price">2500 ريال</span>
+                        </div>
+                        <div class="auction-bids">عدد العروض: 58</div>
+                        <button class="btn btn-primary">ضع عرضك</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="auction-item">
+                    <div class="auction-image">
+                        <img src="https://images.unsplash.com/photo-1487215078519-e21cc028cb29?w=300&h=300&fit=crop" alt="حذاء رياضي">
+                        <span class="auction-badge">ينتهي خلال 4 أيام</span>
+                    </div>
+                    <div class="auction-info">
+                        <h3>حذاء رياضي عالمي</h3>
+                        <div class="auction-price">
+                            <span class="current-price">450 ريال</span>
+                            <span class="original-price">1000 ريال</span>
+                        </div>
+                        <div class="auction-bids">عدد العروض: 41</div>
+                        <button class="btn btn-primary">ضع عرضك</button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="auction-item">
+                    <div class="auction-image">
+                        <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=300&h=300&fit=crop" alt="كاميرا احترافية">
+                        <span class="auction-badge">ينتهي خلال 6 أيام</span>
+                    </div>
+                    <div class="auction-info">
+                        <h3>كاميرا احترافية</h3>
+                        <div class="auction-price">
+                            <span class="current-price">3500 ريال</span>
+                            <span class="original-price">6000 ريال</span>
+                        </div>
+                        <div class="auction-bids">عدد العروض: 35</div>
+                        <button class="btn btn-primary">ضع عرضك</button>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="auction-item">
+                    <div class="auction-image">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300&h=300&fit=crop" alt="عقد الماس">
+                        <span class="auction-badge">ينتهي خلال 7 أيام</span>
+                    </div>
+                    <div class="auction-info">
+                        <h3>عقد الماس الفاخر</h3>
+                        <div class="auction-price">
+                            <span class="current-price">2000 ريال</span>
+                            <span class="original-price">4500 ريال</span>
+                        </div>
+                        <div class="auction-bids">عدد العروض: 52</div>
+                        <button class="btn btn-primary">ضع عرضك</button>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="auction-item">
+                    <div class="auction-image">
+                        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=300&h=300&fit=crop" alt="خاتم ذهب">
+                        <span class="auction-badge">ينتهي خلال 3 أيام</span>
+                    </div>
+                    <div class="auction-info">
+                        <h3>خاتم ذهب 18 قيراط</h3>
+                        <div class="auction-price">
+                            <span class="current-price">600 ريال</span>
+                            <span class="original-price">1200 ريال</span>
+                        </div>
+                        <div class="auction-bids">عدد العروض: 28</div>
+                        <button class="btn btn-primary">ضع عرضك</button>
+                    </div>
+                </div>
+
+                <!-- Product 9 -->
+                <div class="auction-item">
+                    <div class="auction-image">
+                        <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=300&h=300&fit=crop" alt="ساعة اليد">
+                        <span class="auction-badge">ينتهي خلال 2 يوم</span>
+                    </div>
+                    <div class="auction-info">
+                        <h3>ساعة اليد السويسرية</h3>
+                        <div class="auction-price">
+                            <span class="current-price">1500 ريال</span>
+                            <span class="original-price">3000 ريال</span>
+                        </div>
+                        <div class="auction-bids">عدد العروض: 47</div>
+                        <button class="btn btn-primary">ضع عرضك</button>
+                    </div>
+                </div>
+
+                <!-- Product 10 -->
+                <div class="auction-item">
+                    <div class="auction-image">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop" alt="حقيبة ماركة">
+                        <span class="auction-badge">ينتهي خلال 4 أيام</span>
+                    </div>
+                    <div class="auction-info">
+                        <h3>حقيبة يد من ماركة عالمية</h3>
+                        <div class="auction-price">
+                            <span class="current-price">1800 ريال</span>
+                            <span class="original-price">3500 ريال</span>
+                        </div>
+                        <div class="auction-bids">عدد العروض: 55</div>
+                        <button class="btn btn-primary">ضع عرضك</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>عن الموقع</h3>
+                    <p>منصة المزادات الحديثة توفر لك تجربة فريدة في عالم المزادات الإلكترونية مع أفضل الأسعار والمنتجات الأصلية.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>الروابط المهمة</h3>
+                    <ul>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="terms.html">الشروط والأحكام</a></li>
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                        <li><a href="#">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>الفئات</h3>
+                    <ul>
+                        <li><a href="#">الإلكترونيات</a></li>
+                        <li><a href="#">المجوهرات</a></li>
+                        <li><a href="#">الملابس والأحذية</a></li>
+                        <li><a href="#">الإكسسوارات</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>تابعنا</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" title="فيسبوك">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon" title="تويتر">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon" title="إنستجرام">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon" title="لينكد إن">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> موقع المزادات. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- Back to Top Button -->
+
+    <button class="back-to-top" id="backToTop" title="العودة إلى الأعلى">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/auction-system.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/auctions.js"></script>
+</body>
+</html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="desription" content="This is the best electronic website to buy any thing...">
+    <title> المزاد - أفضل منصة للمزادات الإلكترونية</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/loading.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <svg class="loader-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="hammerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#f39c12;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#e67e22;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <rect x="35" y="15" width="30" height="25" rx="3" fill="url(#hammerGradient)" />
+            <rect x="47" y="40" width="6" height="45" fill="#ecf0f1" />
+            <text x="50" y="55" font-size="20" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">$</text>
+        </svg>
+        <div class="loader"></div>
+        <div class="loader-text">جاري التحميل...</div>
+    </div>
+    <!-- End Loading Screen -->
+
+
+    <!-- Header and Navigation -->
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-gavel"></i> المزاد
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="pages/about.html">من نحن</a></li>
+                <li><a href="pages/auctions.html">المزادات</a></li>
+                <li><a href="pages/Polices.html">الشروط والأحكام</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="pages/login.html" target="_blank" class="btn btn-secondary">دخول</a>
+                <a href="pages/register.html" target="_blank" class="btn btn-primary">تسجيل جديد</a>
+            </div>
+            <button class="menu-toggle" title="menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+    <!-- End Header and Navigation -->
+
+
+    <!-- Main Section -->
+    <section class="main">
+        <div class="main-content">
+            <h1 class="main-title slide-in-right">مرحباً بك في منصة المزاد الحديثة</h1>
+            <p class="main-subtitle slide-in-left">اكتشف أفضل العروض والمزادات الحصرية</p>
+            <div class="main-buttons">
+                <a href="pages/auctions.html" class="btn btn-primary">ابدأ المزاد الآن</a>
+                <a href="pages/about.html" class="btn btn-secondary">تعرف علينا</a>
+            </div>
+        </div>
+        <div class="main-image slide-in-up">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop" loading="lazy" alt="صورة المزادات">
+        </div>
+    </section>
+    <!-- End Main Section -->
+
+
+    <!-- Services -->
+    <section class="services section" id="servicesSection">
+        <div class="container">
+            <h2 class="section-title">خدماتنا المميزة</h2>
+            <div class="services-grid">
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>آمن وموثوق</h3>
+                    <p>نضمن سلامة جميع المعاملات مع نظام تشفير عالي الجودة</p>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>سريع وسهل</h3>
+                    <p>واجهة بسيطة وسهلة الاستخدام لتجربة مريحة</p>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>دعم فني</h3>
+                    <p>فريق دعم متاح 24/7 لمساعدتك في أي وقت</p>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>عالمي</h3>
+                    <p>متاح في جميع دول العالم مع شحن دولي</p>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>منتجات أصلية</h3>
+                    <p>ضمان أصالة جميع المنتجات المعروضة</p>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon">
+                        <i class="fas fa-percentage"></i>
+                    </div>
+                    <h3>أسعار منخفضة</h3>
+                    <p>احصل على أفضل الأسعار من خلال المزاد</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Services -->
+
+
+    <!-- Statistics -->
+    <section class="stats section" style="background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); color: white;">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="10000" data-suffix="K+">0</h3>
+                    <p class="stat-label">مستخدم نشط</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="50000" data-suffix="K+">0</h3>
+                    <p class="stat-label">منتج معروض</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="100000" data-suffix="K+">0</h3>
+                    <p class="stat-label">عملية بيع ناجحة</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number" data-target="99" data-suffix="%">0</h3>
+                    <p class="stat-label">رضا العملاء</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Statistics -->
+
+
+    <!-- Featured Auctions -->
+    <section class="featured-auctions section">
+        <div class="container">
+            <h2 class="section-title">أحدث المزادات</h2>
+            <div class="auctions-grid">
+                <div class="auction-item">
+                    <div class="auction-image">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&h=300&fit=crop" loading="lazy" alt="ساعة ذكية">
+                        <span class="auction-badge">ينتهي خلال 2 يوم</span>
+                    </div>
+                    <div class="auction-info">
+                        <h3>ساعة ذكية فاخرة</h3>
+                        <div class="auction-price">
+                            <span class="current-price">500 ريال</span>
+                            <span class="original-price">1200 ريال</span>
+                        </div>
+                        <div class="auction-bids">عدد العروض: 45</div>
+                        <button class="btn btn-primary">ضع عرضك</button>
+                    </div>
+                </div>
+
+                <div class="auction-item">
+                    <div class="auction-image">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300&h=300&fit=crop" loading="lazy" alt="عقد ذهبي">
+                        <span class="auction-badge">ينتهي خلال 1 يوم</span>
+                    </div>
+                    <div class="auction-info">
+                        <h3>عقد ذهبي فاخر</h3>
+                        <div class="auction-price">
+                            <span class="current-price">800 ريال</span>
+                            <span class="original-price">1500 ريال</span>
+                        </div>
+                        <div class="auction-bids">عدد العروض: 62</div>
+                        <button class="btn btn-primary">ضع عرضك</button>
+                    </div>
+                </div>
+
+                <div class="auction-item">
+                    <div class="auction-image">
+                        <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=300&h=300&fit=crop" loading="lazy" alt="نظارات شمسية">
+                        <span class="auction-badge">ينتهي خلال 3 أيام</span>
+                    </div>
+                    <div class="auction-info">
+                        <h3>نظارات شمسية بريطانية</h3>
+                        <div class="auction-price">
+                            <span class="current-price">300 ريال</span>
+                            <span class="original-price">700 ريال</span>
+                        </div>
+                        <div class="auction-bids">عدد العروض: 38</div>
+                        <button class="btn btn-primary">ضع عرضك</button>
+                    </div>
+                </div>
+
+                <div class="auction-item">
+                    <div class="auction-image">
+                        <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=300&h=300&fit=crop" loading="lazy" alt="حقيبة جلد">
+                        <span class="auction-badge">ينتهي خلال 5 أيام</span>
+                    </div>
+                    <div class="auction-info">
+                        <h3>حقيبة جلد إيطالية</h3>
+                        <div class="auction-price">
+                            <span class="current-price">1200 ريال</span>
+                            <span class="original-price">2500 ريال</span>
+                        </div>
+                        <div class="auction-bids">عدد العروض: 58</div>
+                        <button class="btn btn-primary">ضع عرضك</button>
+                    </div>
+                </div>
+
+                <div class="auction-item">
+                    <div class="auction-image">
+                        <img src="https://images.unsplash.com/photo-1487215078519-e21cc028cb29?w=300&h=300&fit=crop" loading="lazy" alt="حذاء رياضي">
+                        <span class="auction-badge">ينتهي خلال 4 أيام</span>
+                    </div>
+                    <div class="auction-info">
+                        <h3>حذاء رياضي عالمي</h3>
+                        <div class="auction-price">
+                            <span class="current-price">450 ريال</span>
+                            <span class="original-price">1000 ريال</span>
+                        </div>
+                        <div class="auction-bids">عدد العروض: 41</div>
+                        <button class="btn btn-primary">ضع عرضك</button>
+                    </div>
+                </div>
+
+                <div class="auction-item">
+                    <div class="auction-image">
+                        <img src="https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=300&h=300&fit=crop" loading="lazy" alt="كاميرا احترافية">
+                        <span class="auction-badge">ينتهي خلال 6 أيام</span>
+                    </div>
+                    <div class="auction-info">
+                        <h3>كاميرا احترافية</h3>
+                        <div class="auction-price">
+                            <span class="current-price">3500 ريال</span>
+                            <span class="original-price">6000 ريال</span>
+                        </div>
+                        <div class="auction-bids">عدد العروض: 35</div>
+                        <button class="btn btn-primary">ضع عرضك</button>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all">
+                <a href="pages/auctions.html" class="btn btn-primary">عرض جميع المزادات</a>
+            </div>
+        </div>
+    </section>
+    <!-- End Featured Auctions -->
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>عن الموقع</h3>
+                    <p>منصة المزادات الحديثة توفر لك تجربة فريدة في عالم المزادات الإلكترونية مع أفضل الأسعار والمنتجات الأصلية.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>الروابط المهمة</h3>
+                    <ul>
+                        <li><a href="pages/about.html">من نحن</a></li>
+                        <li><a href="pages/terms.html">الشروط والأحكام</a></li>
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                        <li><a href="#">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>الفئات</h3>
+                    <ul>
+                        <li><a href="#">الإلكترونيات</a></li>
+                        <li><a href="#">المجوهرات</a></li>
+                        <li><a href="#">الملابس والأحذية</a></li>
+                        <li><a href="#">الإكسسوارات</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>تابعنا</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" title="فيسبوك">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon" title="تويتر">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon" title="إنستجرام">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon" title="لينكد إن">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> موقع المزادات. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" title="العودة إلى الأعلى">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js" defer></script>
+    <script src="js/auction-system.js" defer></script>
+    <script src="js/auth.js" defer></script>
+    <script src="js/home.js" defer></script>
+</body>
+</html>

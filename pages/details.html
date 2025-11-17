@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل المزاد</title>
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="container">
+            <a href="../index.html" class="logo">
+                <i class="fas fa-gavel"></i> المزاد
+            </a>
+            <ul class="nav-menu">
+                <li><a href="../index.html">الرئيسية</a></li>
+                <li><a href="auctions.html">المزادات</a></li>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="terms.html">الشروط والأحكام</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="login.html" target="_blank" class="btn btn-secondary">دخول</a>
+                <a href="register.html" target="_blank" class="btn btn-primary">تسجيل جديد</a>
+            </div>
+            <button class="menu-toggle" title="menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Auction Details Section -->
+    <section class="page-main">
+        <div class="container">
+            <div class="auction-details-container" id="auctionDetailsContainer"> </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>عن الموقع</h3>
+                    <p>منصة المزادات الحديثة توفر لك تجربة فريدة في عالم المزادات الإلكترونية</p>
+                </div>
+                <div class="footer-section">
+                    <h3>الروابط المهمة</h3>
+                    <ul>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="terms.html">الشروط والأحكام</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>تابعنا</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" title="فيسبوك"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon" title="تويتر"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon" title="إنستجرام"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" title="لينكد إن"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> موقع المزادات. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" title="العودة إلى الأعلى">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/auction-system.js"></script>
+    <script src="../js/auth.js"></script>
+    <script src="../js/auction-details.js"></script>
+</body>
+</html>

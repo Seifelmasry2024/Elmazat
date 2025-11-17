@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل جديد - منصة المزادات</title>
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/auth.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <a href="../index.html" class="logo">
+                <i class="fas fa-gavel"></i> المزاد
+            </a>
+            <ul class="nav-menu">
+                <li><a href="../index.html">الرئيسية</a></li>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="auctions.html">المزادات</a></li>
+                <li><a href="terms.html">الشروط والأحكام</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-secondary">دخول</a>
+                <a href="register.html" class="btn btn-primary">تسجيل جديد</a>
+            </div>
+            <button class="menu-toggle" title="menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Cover Image -->
+    <section class="page-main">
+        <div class="page-main-content">
+            <h1>تسجيل حساب جديد</h1>
+            <p>انضم إلى مجتمعنا الآن</p>
+        </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="section">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>مرحباً بك</h2>
+                    <p>قم بإنشاء حساب جديد</p>
+                </div>
+
+                <form id="registerForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">
+                                <i class="fas fa-user"></i> الاسم الأول
+                            </label>
+                            <input 
+                                type="text" 
+                                id="firstName" 
+                                name="firstName" 
+                                placeholder="أدخل اسمك الأول"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lastName">
+                                <i class="fas fa-user"></i> الاسم الأخير
+                            </label>
+                            <input 
+                                type="text" 
+                                id="lastName" 
+                                name="lastName" 
+                                placeholder="أدخل اسمك الأخير"
+                                required
+                            >
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">
+                            <i class="fas fa-envelope"></i> البريد الإلكتروني
+                        </label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="أدخل بريدك الإلكتروني"
+                            required
+                        >
+                        <span class="help-text" id="emailHelp"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">
+                            <i class="fas fa-phone"></i> رقم الهاتف
+                        </label>
+                        <input 
+                            type="tel" 
+                            id="phone" 
+                            name="phone" 
+                            placeholder="أدخل رقم هاتفك"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="city">
+                            <i class="fas fa-map-marker-alt"></i> المدينة
+                        </label>
+                        <input 
+                            type="text" 
+                            id="city" 
+                            name="city" 
+                            placeholder="أدخل مدينتك"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <label for="password">
+                                <i class="fas fa-lock"></i> كلمة المرور
+                            </label>
+                            <button type="button" class="toggle-password-btn" onclick="togglePassword('password')" >
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        <input 
+                            type="password" 
+                            id="password" 
+                            name="password" 
+                            placeholder="أدخل كلمة المرور (6 أحرف على الأقل)"
+                            required
+                            minlength="6"
+                        >
+                        <span class="help-text" id="passwordHelp"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <label for="confirmPassword">
+                                <i class="fas fa-lock"></i> تأكيد كلمة المرور
+                            </label>
+                            <button type="button" class="toggle-password-btn" onclick="togglePassword('confirmPassword')">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        <input 
+                            type="password" 
+                            id="confirmPassword" 
+                            name="confirmPassword" 
+                            placeholder="أعد إدخال كلمة المرور"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms" class="checkbox-label">
+                            أوافق على <a href="terms.html">الشروط والأحكام</a>
+                        </label>
+                    </div>
+
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter" class="checkbox-label">
+                            أرغب في استقبال آخر العروض والأخبار
+                        </label>
+                    </div>
+
+                    <div class="form-buttons">
+                        <button type="submit" class="btn btn-primary" style="width: 100%;" value="إنشاء حساب">
+                            <i class="fas fa-user-plus"></i> إنشاء حساب
+                        </button>
+                    </div>
+                </form>
+
+                <div class="form-divider">أو</div>
+
+                <div class="social-login">
+                    <button class="social-btn facebook" type="button">
+                        <i class="fab fa-facebook"></i> فيسبوك
+                    </button>
+                    <button class="social-btn google" type="button">
+                        <i class="fab fa-google"></i> جوجل
+                    </button>
+                </div>
+
+                <div class="form-link">
+                    <p>هل لديك حساب بالفعل؟ <a href="login.html">سجل دخولك</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>عن الموقع</h3>
+                    <p>منصة المزادات الحديثة توفر لك تجربة فريدة في عالم المزادات الإلكترونية مع أفضل الأسعار والمنتجات الأصلية.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>الروابط المهمة</h3>
+                    <ul>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="terms.html">الشروط والأحكام</a></li>
+                        <li><a href="#">سياسة الخصوصية</a></li>
+                        <li><a href="#">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>الفئات</h3>
+                    <ul>
+                        <li><a href="#">الإلكترونيات</a></li>
+                        <li><a href="#">المجوهرات</a></li>
+                        <li><a href="#">الملابس والأحذية</a></li>
+                        <li><a href="#">الإكسسوارات</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>تابعنا</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" title="فيسبوك">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-icon" title="تويتر">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon" title="إنستجرام">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-icon" title="لينكد إن">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> موقع المزادات. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" title="العودة إلى الأعلى">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/auth.js"></script>
+</body>
+</html>
